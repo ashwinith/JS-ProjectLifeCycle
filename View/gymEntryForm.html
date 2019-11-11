@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+
+    <!-- <form method="POST" action="http://www.hello.com/api/addSales"></form> -->
+    <div class="container form-all">
+      <h1 class="form-header">Club Membership Registration</h1>
+      <h6>Complete the form below to sign up for our membership service.</h6>
+      <hr>
+      
+        <div class="row">
+            <div class="col-2">
+               
+                    <label for="txtMemberName"><b>Name</b></label>
+            </div>   
+            <div class="col-10">
+                    <input id="txtMemberFname" type="text" placeholder="First Name">&nbsp;&nbsp;&nbsp;
+                    <input id="txtMemberLname" type="text" placeholder="Last Name">
+                    
+                  
+            </div>
+        </div>
+<br>
+        <div class="row">
+            <div class="col-2">
+                
+                    <label for="txtMemberAge"><b>Age</b></label></div>
+                    <div class="col-10">
+                    <input id="txtMemberAge" type="number" placeholder="Enter age here">
+                
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-2">
+                
+                    <label for="txtMemberGender"><b>Gender</b></label>
+            </div>
+            <div class="col-10">
+                    <input name="txtMemberGender" type="radio"  value="male">Male
+                    <input name="txtMemberGender" type="radio" value="female">Female
+               
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2">
+                
+                    <label for="txtMemberEmail"><b>Email</b></label>
+            </div>
+            <div class="col-10">
+                    <input id="txtMemberEmail" type="email"  placeholder="ex:myname@example.com" size="45">
+                    
+               
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2">
+                
+                    <label for="txtMemberContactNumber"><b>Contact Number</b></label></div>
+                    <div class="col-10">
+                    <input id="txtMemberHNumber" type="number" placeholder="Enter Home Number">&nbsp;&nbsp;
+                    <input id="txtMemberMNumber" type="number" placeholder="Enter Mobile Number">
+                
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-2">
+                
+                    <label for="txtMemberAddress"><b>Address</b></label></div>
+                    <div class="col-10">
+                    <input id="txtMemberSAddress" type="text" placeholder="Street address"><br><br>
+                    <input id="txtMemberCity" type="text" placeholder="City"><br><br>
+                    <input id="txtMemberState" type="text" placeholder="State"><br><br>
+                    <input id="txtMemberPostalCode" type="number" placeholder="Postal code">
+                
+            </div>
+        </div>
+
+
+    <br>
+    <div class="row">
+        <div class="col-2">
+                <label for="chkMemberFitnessOption"><b>Pick fitness option(s):</b></label>
+        </div>
+        <div class="col-10">
+                <input id="chkMemberFitnessGym" type="checkbox" value="gym"> Gym<br>
+                <input id="chkMemberFitnessZumba" type="checkbox" value="Zumba"> Zumba<br>
+                <input id="chkMemberFitnessCross" type="checkbox" value="Cross Functional Training"> Cross Functional Training<br>
+                <input id="chkMemberFitnessKick" type="checkbox" value="Kick boxing"> Kick boxing<br>
+                <input id="chkMemberFitnessYoga" type="checkbox" value="Yoga"> Yoga<br>
+                <input id="chkMemberFitnessAero" type="checkbox" value="Aerobics"> Aerobics<br>
+                <input id="chkMemberFitnessPilates" type="checkbox" value="Pilates"> Pilates<br>
+        </div>
+    </div>
+<br>
+        <div class="row">
+            <div class="col-2">
+                    <label for="ddlMembershipPlan"><b>Select membership plan:</b></label>
+            </div>
+            <div class="col-2">
+                    <select id="ddlMembershipPlan">
+                        <option value="Select plan">Select your plan</option>
+                        <option value="Monthly">Monthly</option>
+                        <option value="Quarterly">Quarterly</option>
+                        <option value="Half Yearly">Half Yearly</option>
+                        <option value="Yearly">Yearly</option>
+                    </select>
+                
+            </div>
+        </div>
+<!-- <br>
+        <div class="row">
+            <div class="col-2">
+                
+                    <label for="txtFees"><b>Membership Fee</b></label>
+            </div>
+            <div class="col-10">
+                    <input id="txtFees" type="text" disabled>
+                
+            </div>
+        </div> -->
+
+        <br>
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <!-- <input id="btnSubmit" type="submit" class="btn btn-primary"> -->
+                    <button id="btnSubmit" class="btn btn-primary" onclick="onSubmitButtonClickEvent();">Submit</button>
+                    <button id="btnCancel" class="btn btn-danger" onclick="onCancelButtonClickEvent();">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="../Lib/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+<script src="../Model/memberModel.js"></script>
+<script src="../Model/addressModel.js"></script>
+<script src="../Model/discountModel.js"></script>
+<script src="../Model/membershipModel.js"></script>
+<script src="../Model/gymInvoiceModel.js"></script>
+<script src="../Controller/gymInvoiceController.js"></script>
+
+</html>
